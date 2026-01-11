@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysara Bibi Binti Sulleiman Angullia | Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header>
+        <div class="logo">mysaraangullia</div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="jam" class="glass-badge">--:--:--</div>
+    </header>
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="foto-container">
+                <div class="glowing-circle"></div>
+                <!-- Placeholder if image doesn't exist, user can swap back 'foto.jpg' -->
+                <img src="foto.jpeg" alt="Mysara Bibi Binti Sulleiman Angullia" class="foto"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Mysara+Bibi+Sulleiman+Angullia&background=38bdf8&color=fff&size=200'">
+            </div>
+
+            <h1 class="glitch-text" data-text="MYSARA BIBI BINTI SULLEIMAN ANGULLIA">MYSARA BIBI BINTI SULLEIMAN
+                ANGULLIA</h1>
+
+            <div class="typing-container">
+                <span class="static-text">I am a </span>
+                <span class="dynamic-text"></span>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- About / Journey Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title">My Journey <span class="accent-dot">.</span></h2>
+
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="about-content">About Me</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="hobbies">Interests</button>
+                </div>
+
+                <div class="tabs-content">
+                    <div id="about-content" class="tab-pane active">
+                        <h3>Hello World! 👋</h3>
+                        <p>Kenalin, saya mysara asli dari Pancor, Lombok Timur. Sekarang ini saya lagi sibuk kuliah
+                            semester 3 di jurusan Informatika, Universitas Hamzanwadi.</p>
+                        <p>Buat saya, dunia IT itu seru banget. Ngoding nggak cuma soal ngetik sintaks, tapi gimana kita
+                            bisa bikin sesuatu yang keren dari nol. Kalau lagi nggak pusing sama error atau tugas
+                            kuliah, biasanya saya suka jalan-jalan nikmatin alam Lombok sambil foto-foto atau sekadar
+                            ngopi sambil
+                            diskusi hal-hal baru. Intinya, saya orangnya santai tapi serius kalau udah ketemu hal yang
+                            saya suka!</p>
+
+                    </div>
+
+                    <div id="education" class="tab-pane">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <span class="date">2024 - Sekarang</span>
+                                <h4>Mahasiswa TI Universitas Hamzanwadi</h4>
+                                <p>Sedang menempuh pendidikan sarjana, mempelajari algoritma, struktur data, dan
+                                    pengembangan web.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <span class="date">2021 - 2024</span>
+                                <h4>Sekolah Menengah Atas (MAN 1 Lombok Timur)</h4>
+                                <p>Fokus pada IPA dan mulai mengenal dasar-dasar pemrograman.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <span class="date">2018 - 2021</span>
+                                <h4>Sekolah Menengah Pertama (SMPI Tahfizh Darusshomad Kerongkong)</h4>
+                                <p>Fokus menempuh pendidikan di pondok pesantren.</p>
+                            </li>
+                            <li class="timeline-item">
+                                <span class="date">2012 - 2018</span>
+                                <h4>Sekolah Dasar (SDIT Nurul Fikri Selong)</h4>
+                        </ul>
+                    </div>
+
+                    <div id="hobbies" class="tab-pane">
+                        <div class="interests-grid">
+                            <div class="interest-card">
+                                <i class="fas fa-code"></i>
+                                <span>Coding</span>
+                            </div>
+                            <div class="interest-card">
+                                <i class="fas fa-camera"></i>
+                                <span>Photography</span>
+                            </div>
+                            <div class="interest-card">
+                                <i class="fas fa-music"></i>
+                                <span>Music</span>
+                            </div>
+                            <div class="interest-card">
+                                <i class="fas fa-book"></i>
+                                <span>Reading</span>
+                            </div>
+                        </div>
+
+                        <!-- Gallery Section -->
+                        <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.5rem;">My Shots 📸</h3>
+                        <div class="photo-gallery">
+                            <div class="photo-item">
+                                <img src="foto1.jpeg" alt="pantai">
+                                <div class="photo-caption">pantai</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto2.jpeg" alt="Nature">
+                                <div class="photo-caption">Nature</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto3.jpeg" alt="Cat">
+                                <div class="photo-caption">Cat</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto4.jpeg" alt="Bukit Kondo">
+                                <div class="photo-caption">Bukit Kondo</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto5.jpeg" alt="pohon">
+                                <div class="photo-caption">pohon</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto6.jpeg" alt="random">
+                                <div class="photo-caption">random</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto7.jpeg" alt="pantai pink">
+                                <div class="photo-caption">pantai pink</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto8.jpeg" alt="pantai tanjung aan">
+                                <div class="photo-caption">pantai tanjung aan</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto9.jpeg" alt="air terjun mayung polak">
+                                <div class="photo-caption">air terjun mayung polak</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto10.jpeg" alt="kampus 1 Universitas Hamzanwadi">
+                                <div class="photo-caption">kampus 1 Universitas Hamzanwadi</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto11.jpeg" alt="air terjun loang gali">
+                                <div class="photo-caption">air terjun loang gali</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto12.jpeg" alt="air terjun mangku sakti">
+                                <div class="photo-caption">air terjun mangku sakti</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto13.jpeg" alt="pantai batu dagong">
+                                <div class="photo-caption">pantai batu dagong</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto14.jpeg" alt="sunrise land">
+                                <div class="photo-caption">sunrise land</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto15.jpeg" alt="telaga biru">
+                                <div class="photo-caption">telaga biru</div>
+                            </div>
+                            <div class="photo-item">
+                                <img src="foto16.jpeg" alt="lesehan elen">
+                                <div class="photo-caption">lesehan elen</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title">Featured Projects <span class="accent-dot">.</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass-panel">
+                    <div class="project-image">
+                        <img src="logo.png" alt="MYCloud">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MYCloud</h3>
+                        <p>Personal cloud storage solution with secure file management, real-time upload tracking, and
+                            modern file previews.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future project -->
+                <div class="project-card glass-panel placeholder">
+                    <div class="project-content">
+                        <i class="fas fa-plus"></i>
+                        <h3>Next Big Thing</h3>
+                        <p>Stay tuned! Working on something amazing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Skills -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title">Tech Stack <span class="accent-dot">.</span></h2>
+            <div class="skills-wrapper">
+                <div class="skill-card" style="--delay: 0s">
+                    <i class="fab fa-html5" style="color: #e34c26;"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card" style="--delay: 0.1s">
+                    <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card" style="--delay: 0.2s">
+                    <i class="fab fa-js" style="color: #f0db4f;"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card" style="--delay: 0.3s">
+                    <i class="fab fa-python" style="color: #3776AB;"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card" style="--delay: 0.4s">
+                    <i class="fas fa-database" style="color: #00758f;"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card" style="--delay: 0.5s">
+                    <i class="fab fa-figma" style="color: #F24E1E;"></i>
+                    <span>Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Contact -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Get In Touch <span class="accent-dot">.</span></h2>
+            <div class="contact-container glass-panel">
+                <div class="contact-info">
+                    <h3>Let's Chat!</h3>
+                    <p>Have a project in mind or just want to explore ideas?</p>
+                    <div class="social-links">
+                        <!-- Ganti username_ig dengan username Instagram Anda -->
+                        <a href="https://www.instagram.com/mysaraangullia?igsh=MzM2NW5venlhZXVr&utm_source=qr"
+                            target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+
+                        <a href="https://github.com/" target="_blank" class="social-btn"><i
+                                class="fab fa-github"></i></a>
+
+                        <!-- Ganti username_linkedin dengan profil LinkedIn Anda -->
+                        <a href="https://www.linkedin.com/in/mysara-angullia-105a77323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="event.preventDefault(); sendMessage();">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Designed & Built with <i class="fas fa-heart" style="color: var(--accent-color);"></i> by <strong>Mysara
+                Bibi</strong></p>
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
